@@ -55,6 +55,9 @@ See the mobile view demonstration of the Waiting List Application running on loc
 - **Firebase**: For storing customer contact information and real-time data synchronization.
 - **EmailJS**: For sending emails directly from the client-side.
 
+![Screenshot 2024-08-02 182632](https://github.com/user-attachments/assets/24e17a34-d77e-46c1-ba30-169b1846d018)
+
+
 ## API Endpoints
 
 This project includes several API endpoints to manage user interactions and service bookings. The endpoints cover functionalities such as user authentication, service booking, and user registration. Below are the key API endpoints:
