@@ -14,7 +14,7 @@ Explore the Bike Service Application in action on various devices by watching th
 
 See the desktop view demonstration of the Waiting List Application running on localhost:
 
-[Desktop View Video]
+[Desktop View Video](https://drive.google.com/file/d/1GGBsZ9nwaoDA26lt8NVMMeajmEP4ALiZ/view?usp=sharing )
 
 ### Mobile View
 
