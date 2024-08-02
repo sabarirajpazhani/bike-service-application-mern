@@ -133,6 +133,8 @@ mongoose.connect("mongodb://127.0.0.1:27017/customer"); // Connecting to the Mon
 ## File Structure
 
 The project is organized into two main directories: backend and frontend. Below is the file structure for the project:
+
+
 ![Screenshot 2024-08-02 145717](https://github.com/user-attachments/assets/40e5586e-e1d3-4cbd-b61e-d2ff5aea29a4)
 
 
