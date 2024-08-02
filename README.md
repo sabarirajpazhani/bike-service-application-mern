@@ -80,7 +80,28 @@ When a service or package is booked, both the owner and customer receive email n
 **Customer**
 ![Screenshot 2024-08-02 143806](https://github.com/user-attachments/assets/5f750c29-ad26-494e-ba72-a5216e7d661e)
 
-
+### Email Code
+javascript
+ // Send form data using emailjs
+        emailjs
+            .sendForm(
+                "service_3p434wp",
+                "template_ksbc2cc",
+                form.current,
+                "3ubrd_BwR6Gum05AP"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    toast.success("Your selected service has been successfully booked!");
+                    setShowAnimation(true);
+                },
+                (error) => {
+                    console.log(error.text);
+                    toast.error("An error occurred. Please try again.");
+                }
+            );
+    };
 
 
 
