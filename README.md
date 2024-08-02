@@ -129,6 +129,52 @@ mongoose.connect("mongodb://127.0.0.1:27017/customer"); // Connecting to the Mon
 ```
 ![Screenshot 2024-08-02 145152](https://github.com/user-attachments/assets/b39a7bd0-6e74-443d-b1f0-5120ee2ee06f)
 
+## API Integration
+
+Axios is used to make API requests to the backend for functionalities such as user login, registration, and service booking. Below is an example of how to set up Axios for making these requests:
+
+```javascript
+import axios from 'axios';
+
+// Base URL for the API
+const API_URL = 'http://localhost:3001'; // Adjust the URL according to your backend configuration
+
+// Function to handle user login
+const login = async (email, password) => {
+    try {
+        const response = await axios.post(`${API_URL}/login`, { email, password });
+        console.log('Login Success:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('Login Error:', error.response.data);
+        throw error;
+    }
+};
+
+// Function to handle user registration
+const register = async (email, password, username) => {
+    try {
+        const response = await axios.post(`${API_URL}/register`, { email, password, username });
+        console.log('Registration Success:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('Registration Error:', error.response.data);
+        throw error;
+    }
+};
+
+// Function to book a service
+const bookService = async (serviceData) => {
+    try {
+        const response = await axios.post(`${API_URL}/book-service`, serviceData);
+        console.log('Service Booking Success:', response.data);
+        return response.data;
+    } catch (error) {
+        console.error('Service Booking Error:', error.response.data);
+        throw error;
+    }
+};
+```
 
 ## File Structure
 
