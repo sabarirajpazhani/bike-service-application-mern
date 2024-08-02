@@ -64,6 +64,26 @@ This project includes several API endpoints to manage user interactions and serv
 - **GET /profile**: Retrieves user profile information.
 - **PUT /profile**: Updates user profile information.
 
+### Email Notifications
+
+When a service or package is booked, both the owner and customer receive email notifications:
+
+- **Owner**: Receives detailed booking information.
+  
+- **Customer**: Receives a confirmation of their booking.
+
+### Email Configuration
+
+**Owner**
+![Screenshot 2024-08-02 143744](https://github.com/user-attachments/assets/e472ae47-3ac4-4621-af5a-a230fda1e54e)
+
+**Customer**
+![Screenshot 2024-08-02 143806](https://github.com/user-attachments/assets/5f750c29-ad26-494e-ba72-a5216e7d661e)
+
+
+
+
+
 
 
 
