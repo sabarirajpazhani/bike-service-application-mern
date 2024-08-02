@@ -81,28 +81,59 @@ When a service or package is booked, both the owner and customer receive email n
 ![Screenshot 2024-08-02 143806](https://github.com/user-attachments/assets/5f750c29-ad26-494e-ba72-a5216e7d661e)
 
 ### Email Code
-javascript
- // Send form data using emailjs
-        emailjs
-            .sendForm(
-                "service_3p434wp",
-                "template_ksbc2cc",
-                form.current,
-                "3ubrd_BwR6Gum05AP"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                    toast.success("Your selected service has been successfully booked!");
-                    setShowAnimation(true);
-                },
-                (error) => {
-                    console.log(error.text);
-                    toast.error("An error occurred. Please try again.");
-                }
-            );
-    };
+```javascript
+// Send form data using emailjs
+emailjs
+    .sendForm(
+        "service_3p434wp",
+        "template_ksbc2cc",
+        form.current,
+        "3ubrd_BwR6Gum05AP"
+    )
+    .then(
+        (result) => {
+            console.log(result.text);
+            toast.success("Your selected service has been successfully booked!");
+            setShowAnimation(true);
+        },
+        (error) => {
+            console.log(error.text);
+            toast.error("An error occurred. Please try again.");
+        }
+    );
+```
+### Web Pages Used in This Project
 
+- **Homepage**: Provides an overview of the bike service application, highlighting key features and navigation to other sections.
+- **About**: Details the purpose of the bike service application and its benefits.
+- **Services**: Lists and describes the available bike maintenance services and packages, including water wash, oil change, general check-ups, and comprehensive service packages.
+- **Signup**: Allows new users to create an account and register for the service.
+- **Login**: Enables existing users to log in and access their accounts.
+- **Service Booking for Packages**: Interface for users to book comprehensive service packages that include multiple services.
+- **Service Booking for Individual Services**: Interface for users to book specific bike maintenance services individually.
+- **Profile**: Page where users can view and update their personal information and manage their account details.
+
+### MongoDB Configuration
+
+This application uses MongoDB for database operations. The `mongoose` library is used to connect to and interact with MongoDB.
+
+- **Database URL**: The application connects to MongoDB at `mongodb://127.0.0.1:27017/customer`.
+- **Database Name**: `customer`
+
+In the code:
+
+```javascript
+const mongoose = require('mongoose'); // Importing mongoose library for MongoDB operations
+
+mongoose.connect("mongodb://127.0.0.1:27017/customer"); // Connecting to the MongoDB database
+```
+![Screenshot 2024-08-02 145152](https://github.com/user-attachments/assets/b39a7bd0-6e74-443d-b1f0-5120ee2ee06f)
+
+
+## File Structure
+
+The project is organized into two main directories: backend and frontend. Below is the file structure for the project:
+![Screenshot 2024-08-02 145717](https://github.com/user-attachments/assets/40e5586e-e1d3-4cbd-b61e-d2ff5aea29a4)
 
 
 
