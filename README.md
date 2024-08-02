@@ -42,12 +42,12 @@ See the mobile view demonstration of the Waiting List Application running on loc
 
 ### Backend
 - **Node.js with Express.js**: For server-side functionality and API handling.
-- **EmailJS**: For sending emails directly from the client-side.
 - **MongoDB with Mongoose**: For managing user data and service bookings.
 - **Bcrypt.js**: For secure password hashing.
 
-### Other Tools
+### Tools Used
 - **Firebase**: For storing customer contact information and real-time data synchronization.
+- **EmailJS**: For sending emails directly from the client-side.
 
 ## API Endpoints
 
