@@ -1,7 +1,6 @@
 # cart_rabbit
 
-![github](https://github.com/user-attachments/assets/e3bfdc54-2d47-454e-bc95-040e5b714a5e)
-
+![git](https://github.com/user-attachments/assets/d711e5da-26bd-4a48-827d-2acd394bb5a7)
 
 # Bike Service Application
 
@@ -21,7 +20,7 @@ See the desktop view demonstration of the Waiting List Application running on lo
 
 See the mobile view demonstration of the Waiting List Application running on localhost:
 
-[Mobile View Video]
+[Mobile View Video](https://drive.google.com/file/d/1OFcdbQ82jj1vvAG61EkQxoceo4ohsxGu/view?usp=sharing)
 
 ## Features
 
