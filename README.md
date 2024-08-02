@@ -138,6 +138,7 @@ The project is organized into two main directories: backend and frontend. Below 
 ![Screenshot 2024-08-02 145717](https://github.com/user-attachments/assets/40e5586e-e1d3-4cbd-b61e-d2ff5aea29a4)
 
 
+This section offers a concise overview of the project's file structure, aiding contributors and users in navigating and understanding the codebase.
 
 
 
