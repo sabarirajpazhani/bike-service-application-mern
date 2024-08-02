@@ -48,6 +48,9 @@ See the mobile view demonstration of the Waiting List Application running on loc
 - **MongoDB with Mongoose**: For managing user data and service bookings.
 - **Bcrypt.js**: For secure password hashing.
 
+![Screenshot 2024-08-02 181857](https://github.com/user-attachments/assets/4acd6e4e-035a-4afa-a52b-b4c9ff7603b3)
+
+
 ### Tools Used
 - **Firebase**: For storing customer contact information and real-time data synchronization.
 - **EmailJS**: For sending emails directly from the client-side.
