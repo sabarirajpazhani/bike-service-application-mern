@@ -39,6 +39,7 @@ See the mobile view demonstration of the Waiting List Application running on loc
 - **React-toastify**: For real-time toast notifications.
 - **Framer Motion**: For smooth and interactive animations.
 - **React-lottie**: For rendering engaging Lottie animations.
+
 ![Screenshot 2024-08-02 175822](https://github.com/user-attachments/assets/938fca4d-526b-46a0-9ce5-d6be5c9c7338)
 
   
