@@ -204,7 +204,7 @@ git clone https://github.com/yourusername/bike-service-application.git
 
 ### Navigate to the project directory:
 ```bash
-cd bike-service-application
+cd frontend
 ```
 
 ### Install dependencies for the frontend and backend:
