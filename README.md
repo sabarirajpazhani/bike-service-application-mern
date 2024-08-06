@@ -153,6 +153,7 @@ In our bike service application, we've implemented a feature that sends an autom
 - **Service Booking for Packages**: Interface for users to book comprehensive service packages that include multiple services.
 - **Service Booking for Individual Services**: Interface for users to book specific bike maintenance services individually.
 - **Profile**: Page where users can view and update their personal information and manage their account details.
+- **Deliver**: The Deliver page allows the BikeBlitz team to send notification emails to customers, informing them when their bike service is completed and ready for delivery.
 
 ### MongoDB Configuration
 
