@@ -28,7 +28,7 @@ See the mobile view demonstration of the Waiting List Application running on loc
 - **Service Booking**: Book various bike maintenance services like water wash, oil change, and general check-up.
 - **Service Packages**: Select from multiple service packages for comprehensive bike care.
 - **Real-Time Notifications**: Receive notifications about service bookings and updates.
-- **Email Notifications**: Automated email messages for booking confirmations and updates.
+- **Email Notifications**: Automated email messages are sent for booking confirmations, updates, and delivery notifications, including informing customers when their bike is ready for delivery.
 - **Animation and User Feedback**: Engage users with animations and popup messages for actions like successful bookings.
 
 ## Technologies Used
