@@ -286,7 +286,7 @@ This section offers a concise overview of the project's file structure, aiding c
 
 ### Clone the repository:
 ```bash
-git clone https://github.com/yourusername/bike-service-application.git
+https://github.com/sabarirajpazhani/bike-service-application-mern.git
 ```
 
 ### Navigate to the project directory:
