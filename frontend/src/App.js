@@ -10,6 +10,7 @@ import EmailPackage from '../src/Components/Pages/Email/EmailPackage'; // Import
 import Signup from '../src/Components/Pages/Signup/Signup'; // Importing Signup component
 import Login from '../src/Components/Pages/Login/Login'; // Importing Login component
 import Profile from '../src/Components/Pages/Profile/Profile'; // Importing Profile component
+import Deliver from '../src/Components/Pages/Deliver/Deliver' //Importing Deliver component
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/register" element={<Signup/>}/> 
         <Route path="/login" element={<Login/>}/> 
         <Route path="/profile" element={<Profile/>}/> 
+        <Route path="/devliverservice" element={<Deliver/>}/>
       </Routes> 
     </BrowserRouter> // End of BrowserRouter
   );
