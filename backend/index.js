@@ -4,6 +4,7 @@ const cors = require("cors"); // Importing CORS middleware to handle cross-origi
 const bcrypt = require('bcrypt'); // Importing bcrypt library for password encryption
 const CustomerModel = require('./models/Customer'); // Importing the Customer model
 
+
 const app = express(); // Creating an Express application
 const port =process.env.PORT || 4000;
 app.use(express.json()); // Middleware to parse JSON request bodies
@@ -50,6 +51,19 @@ app.post('/register', (req, res) => { // Defining a POST route for user registra
         })
         .catch(err => res.status(500).json(err)); // Handling any errors that occur during the process
 });
+
+
+
+// Endpoint to handle booking data
+app.post("/bookings", (req, res) => {
+    const { from_name, from_email, phone, service } = req.body; // Extracting data from the request body
+
+    // Create a new booking
+    BookingModel.create({ from_name, from_email, phone, service })
+        .then(booking => res.json(booking)) // Send success response with booking data
+        .catch(err => res.status(500).json({ message: "Error saving booking data", error: err })); // Send error response
+});
+
 
 app.listen(3001, () => { // Starting the server on port 3001
     console.log("server is running"); // Logging that the server is running
