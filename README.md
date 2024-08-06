@@ -217,6 +217,59 @@ const bookService = async (serviceData) => {
 };
 ```
 
+## MongoDB Configuration for Delivery Messages
+
+Our bike service application uses MongoDB to manage and store delivery messages related to customer service notifications. The MongoDB configuration ensures efficient handling and retrieval of these messages.
+
+1. **Database Connection**
+   
+   ```javascript
+   const mongoose = require('mongoose');
+   mongoose.connect(process.env.MONGO_URI, {
+   useNewUrlParser: true,
+   useUnifiedTopology: true,
+   }).then(() => {
+   console.log('Connected to MongoDB');
+   }).catch((err) => {
+   console.error('MongoDB connection error:', err);
+   });
+   ```
+2. **Model Definition**
+
+   ```javascript
+   const mongoose = require('mongoose'); // Importing mongoose library for MongoDB operations
+
+   const BookingSchema = new mongoose.Schema({ // Defining a new Mongoose schema for booking data
+    from_name: String, // Customer name
+    from_email: String, // Customer email
+    phone: String, // Customer phone
+    service: String, // Selected service
+    booked_at: { type: Date, default: Date.now } // Timestamp for booking
+    });
+
+   const BookingModel = mongoose.model("bookings", BookingSchema); // Creating a Mongoose model for bookings collection
+   module.exports = BookingModel; // Exporting the BookingModel
+   ```
+3. **Usage**
+   ```javascript
+   const DeliveryMessage = require('./models/DeliveryMessage');
+
+   const createDeliveryMessage = async (email, serviceId, message) => {
+    const deliveryMessage = new DeliveryMessage({
+    customerEmail: email,
+    serviceId: serviceId,
+    message: message,
+    status: 'pending',
+    });
+  
+    await deliveryMessage.save();
+    console.log('Delivery message saved:', deliveryMessage);
+   };
+   ```
+
+![image](https://github.com/user-attachments/assets/27159959-2505-48b7-bd76-5fd772df648d)
+
+
 ## File Structure
 
 The project is organized into two main directories: backend and frontend. Below is the file structure for the project:
