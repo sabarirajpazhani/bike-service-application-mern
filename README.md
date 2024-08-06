@@ -111,6 +111,38 @@ emailjs
         }
     );
 ```
+
+### Bike Delivery Service Notification
+
+In our bike service application, we've implemented a feature that sends an automated notification email to customers when their bike service is complete and their bike is ready for delivery. This ensures timely and efficient communication, enhancing customer satisfaction by keeping them informed about the status of their service. 
+
+**Deliver Email Configuration**
+```javascript
+// Send email using EmailJS
+        emailjs.send(
+            'service_gbw806h',
+            'template_f9fon7l',
+            formData,
+            'KVBw83s3wujFjSg8B'
+        )
+        .then((result) => {
+            console.log(result.text);
+            toast.success("Email sent successfully!");
+        }, (error) => {
+            console.log(error.text);
+            toast.error("An error occurred. Please try again.");
+        });
+
+        // Clear form fields
+        setFormData({ name: "", email: "", phone: "", service: "" });
+```
+![image](https://github.com/user-attachments/assets/53397128-187a-4bd3-899e-44adae9a3a47)
+
+**Deliver Message**
+![image](https://github.com/user-attachments/assets/303c68d0-0ef3-4e3c-8081-d257ff5bb190)
+
+
+
 ### Web Pages Used in This Project
 
 - **Homepage**: Provides an overview of the bike service application, highlighting key features and navigation to other sections.
