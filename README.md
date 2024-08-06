@@ -276,7 +276,8 @@ Our bike service application uses MongoDB to manage and store delivery messages 
 The project is organized into two main directories: backend and frontend. Below is the file structure for the project:
 
 
-![Screenshot 2024-08-02 145717](https://github.com/user-attachments/assets/40e5586e-e1d3-4cbd-b61e-d2ff5aea29a4)
+![image](https://github.com/user-attachments/assets/28048437-d94b-4d62-b8f9-5809c107d798)
+
 
 
 This section offers a concise overview of the project's file structure, aiding contributors and users in navigating and understanding the codebase.
